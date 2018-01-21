@@ -1,0 +1,9 @@
+include_rules = [
+  "+athena/input/public",
+  "+athena/screen/public",
+  "+ui/aura",
+  "+ui/compositor",
+  "+ui/events",
+  "+ui/gfx",
+  "+ui/wm",
+]

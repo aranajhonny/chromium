@@ -1,0 +1,20 @@
+# Copyright 2014 The Chromium Authors. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+import("//tools/grit/grit_rule.gni")
+
+# GYP version: chrome/chrome_resources.gyp:theme_resources
+grit("theme_resources") {
+  source = "theme_resources.grd"
+
+  deps = [
+    ":chrome_unscaled_resources",
+    "//ui/resources",
+  ]
+}
+
+# GYP version: chrome/chrome_resources.gyp:chrome_unscaled_resources
+grit("chrome_unscaled_resources") {
+  source = "chrome_unscaled_resources.grd"
+}

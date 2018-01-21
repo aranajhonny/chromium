@@ -1,0 +1,6 @@
+include_rules = [
+  # Override apps/DEPS to be more selective about content includes.
+  "-content",
+  "+content/public/common",
+  "+content/public/test",
+]
